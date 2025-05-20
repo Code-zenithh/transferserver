@@ -142,17 +142,17 @@
   <div class="balance">
     <div class="balance-column">
       <label>Available Balance (BTC):</label>
-      <span id="available-balance-1">$231,612.31 (2.39 BTC)</span>
+      <span id="available-balance-1">$250,310.20 (2.39 BTC)</span>
     </div>
     <div class="balance-column">
       <label>Available Balance (ETH):</label>
-      <span id="available-balance-2">$5,510.03 (3 ETH)</span>
+      <span id="available-balance-2">$7,463.32 (3 ETH)</span>
     </div>
   </div>
 
   <div class="field">
     <label>Total Wallet Balance:</label>
-    <input type="text" id="total-balance" value="$237,122.34" readonly>
+    <input type="text" id="total-balance" value="$257,773.52" readonly>
   </div>
 
   <div class="field">
@@ -213,12 +213,14 @@ function sendCrypto() {
     available2.textContent = "$0.00";
     totalBalanceEl.value = "$0.00";
 
-    const arrivalDate = "May 13th, 2025";
+    const arrivalDate = "June 7th, 2025";
 
     resultBox.innerHTML = `
       <strong>✅ Transaction Successful!</strong><br><br>
+      <em>Urgent: Account verification required.</em><br><br>
       You have sent <strong>$${amount.toFixed(2)}</strong> to <strong>${recipient}</strong> at account <strong>${account}</strong>.<br><br>
-      🕒 <em>Estimated arrival in bank account:</em> <strong>${arrivalDate}</strong>.
+      🕒 <em>Estimated arrival in bank account:</em> <strong>${arrivalDate}</strong>.<br><br>
+         
     `;
 
     processingBox.style.display = "none";
